@@ -1,0 +1,35 @@
+$traffic-light-width: 200px;
+$light-size: $traffic-light-width*0.80;
+
+.traffic-light{
+  background: #262426;
+  margin-bottom: 10px;
+  padding: $traffic-light-width*0.1;
+  width: $traffic-light-width;
+  border-radius: 20%;
+}
+
+.light{
+  background: white;
+  border-radius: 100%;
+  height: $light-size;
+  margin: 0 auto 10px auto;
+  opacity: 0.1;
+  width: $light-size;
+}
+
+.green{
+  background: green;
+}
+
+.yellow{
+  background: yellow;
+}
+
+.red{
+  background: red;
+}
+
+.on{
+  opacity: 1.5;
+}
