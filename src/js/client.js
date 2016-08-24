@@ -16,8 +16,7 @@ const TrafficLight = ({state}) =>(
 	</div>
 );
 
-//Reducer
-const color = (state = 0,action)=>{
+const ChangeColor = (state = 0,action)=>{
 	if(action.type === 'NEXT_STATE') {
 		switch (state) {
 			case 0:
@@ -33,7 +32,7 @@ const color = (state = 0,action)=>{
 	return state;
 }
 
-const store = createStore(color);
+const store = createStore(ChangeColor);
 
 const render = () => {
 	ReactDOM.render(
